@@ -1,0 +1,26 @@
+<div class="contenedor-principal">
+    <h2>Busca una Bebida</h2>
+    <form [formGroup]="form" (submit)="searchDrink()">
+        <div>
+            <label for="">Nombre:</label>
+            <input type="text" formControlName="name" placeholder="Nombre de bebida">
+        </div>
+    <button type="submit" >Buscar</button>
+    </form>
+</div>
+<div class="contenedor-drinks" >
+    <ng-container *ngFor="let drink of drinks">
+            <div class="contenedor-drink">
+                <p>{{drink.name}}</p>
+                <img width="200px" src="{{drink.img}}"/>
+                <div *ngFor="let ingredient of drink.ingredients">
+                    <label for="">{{ingredient}}</label>
+                </div>
+                
+                <!-- <div>
+                    <p ngForm="let i of [].constructor()"></p>
+                </div> -->
+            </div>
+    </ng-container>
+
+</div>

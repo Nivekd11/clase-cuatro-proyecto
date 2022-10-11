@@ -1,0 +1,62 @@
+
+.contenedor-principal{
+    color: azure;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            input{
+                border: 1px solid rgb(186, 186, 186);
+                height: 30px;
+                border-radius: 0.5rem;
+            }
+        }
+        button{
+            background-color: rgb(5, 122, 194);
+            border: none;
+            height: 30px;
+            color: aliceblue;
+            border-radius: 0.5rem;
+            width: 50%;
+        }
+    }
+    margin-bottom: 1rem;
+}
+
+.contenedor-drinks{
+    color: azure;
+    font-family: 'Roboto';
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    text-align: center;
+    gap: 1rem;
+    
+    div{
+        border: 1px solid rgb(186, 186, 186);
+        padding: 1rem;
+        border-radius: 1rem;
+        transition: all 0.5s ease-in-out;
+        
+
+        img{
+            border-radius: 1rem;
+        }
+
+    }
+
+}
+
+.contenedor-drink:hover{
+    transform: scale(1.05);
+}
